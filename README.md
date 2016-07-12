@@ -2,7 +2,8 @@
 Технологии:
 1) Frontend: bootstrap
 2) Backend: java, spring ioc/mvc/security, hibernate.
-
+База MySQL
+Build-utility - Maven.
 В системе следующие сущности:
 User (2 роли – Dev и Man)
 Project
