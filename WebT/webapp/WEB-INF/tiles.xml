@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="default" template="/WEB-INF/view/layouts/default.jspx">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/view/common/header.jspx"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value=""/>
+    </definition>
+        <definition name="/view/login" template="/WEB-INF/view/Login.jsp">
+        <put-attribute name="title" value="LOGIN PAGE"/>
+    </definition>
+     
+    <definition name="NewIndex" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/NewIndex.jsp"/>
+    </definition>
+    
+    <definition name="web/success" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/NewIndex.jsp"/>
+    </definition>
+    
+    <definition name="view" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/NewIndex.jsp"/>
+    </definition>
+    <definition name="view/menu" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/Login.jsp"/>
+    </definition>  
+    <definition name="view/develop" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/ManPages/Manager.jsp"/>
+    </definition>  
+    <definition name="view/comment" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/DevPages/CommentPage.jsp"/>
+    </definition>  
+    <definition name="view/comments" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/DevPages/CommentsPage.jsp"/>
+    </definition>  
+    <definition name="view/project" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/view/ManPages/Project.jsp"/>
+    </definition>  
+     <definition name="Logout" extends="default">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/Index.jsp"/>
+    </definition>
+</tiles-definitions>
